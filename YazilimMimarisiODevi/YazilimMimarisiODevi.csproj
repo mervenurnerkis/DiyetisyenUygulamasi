@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F0B2785-5E22-4694-BC08-2B82379AF6B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YazilimMimarisiODevi</RootNamespace>
+    <AssemblyName>YazilimMimarisiODevi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Akdeniz.cs" />
+    <Compile Include="Colyak.cs" />
+    <Compile Include="DenizUrunleri.cs" />
+    <Compile Include="DiyetFabrikasi.cs" />
+    <Compile Include="DiyetisyenAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyetisyenAnaEkran.Designer.cs">
+      <DependentUpon>DiyetisyenAnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetListesiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DiyetListesiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetListesiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DiyetListesiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetListesiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DiyetListesiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetListesiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DiyetListesiDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetListesiDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DiyetListesiDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetTurleri.cs" />
+    <Compile Include="GirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisEkrani.Designer.cs">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlutenFree.cs" />
+    <Compile Include="Hasta.cs" />
+    <Compile Include="HastaFabrikasi.cs" />
+    <Compile Include="Hastalik.cs" />
+    <Compile Include="HastalikFabrikasi.cs" />
+    <Compile Include="IDiyetTurleri.cs" />
+    <Compile Include="IHasta.cs" />
+    <Compile Include="IHastalik.cs" />
+    <Compile Include="IRapor.cs" />
+    <Compile Include="Obez.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rapor.cs" />
+    <Compile Include="Seker.cs" />
+    <Compile Include="YesilliklerDunyasi.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyetisyenAnaEkran.resx">
+      <DependentUpon>DiyetisyenAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisEkrani.resx">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DiyetListesiDataSet.xsc">
+      <DependentUpon>DiyetListesiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DiyetListesiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DiyetListesiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DiyetListesiDataSet.xss">
+      <DependentUpon>DiyetListesiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DiyetListesiDataSet1.xsc">
+      <DependentUpon>DiyetListesiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DiyetListesiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DiyetListesiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DiyetListesiDataSet1.xss">
+      <DependentUpon>DiyetListesiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DiyetListesiDataSet2.xsc">
+      <DependentUpon>DiyetListesiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DiyetListesiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DiyetListesiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DiyetListesiDataSet2.xss">
+      <DependentUpon>DiyetListesiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DiyetListesiDataSet3.xsc">
+      <DependentUpon>DiyetListesiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DiyetListesiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DiyetListesiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DiyetListesiDataSet3.xss">
+      <DependentUpon>DiyetListesiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DiyetListesiDataSet4.xsc">
+      <DependentUpon>DiyetListesiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DiyetListesiDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DiyetListesiDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DiyetListesiDataSet4.xss">
+      <DependentUpon>DiyetListesiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
